@@ -274,7 +274,6 @@ class Program1
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 		ArrayList<Animal> animals=new ArrayList<Animal>(); 
 		int choice;
-		Iterator it=null;
 		do
 		{
 			System.out.println("1 for create object of bat.");
@@ -305,7 +304,7 @@ class Program1
 				case 5:Parrot parrot=new Parrot();
 					animals.add(obj.input(parrot));
 					break;
-				case 6:it=animals.iterator();
+				case 6:Iterator it=animals.iterator();
 					while(it.hasNext())
 					{
 						Animal animal=(Animal)it.next();
@@ -313,7 +312,7 @@ class Program1
 					}
 					break;
 				case 7:
-					it=animals.iterator();
+					Iterator it=animals.iterator();
 					while(it.hasNext())
 					{
 						Animal animal=(Animal)it.next();
@@ -322,7 +321,7 @@ class Program1
 					}
 					break;
 				case 8:
-					it=animals.iterator();
+					Iterator it=animals.iterator();
 					while(it.hasNext())
 					{
 						Animal animal=(Animal)it.next();
